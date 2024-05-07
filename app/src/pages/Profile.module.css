@@ -1,0 +1,191 @@
+.profile{
+    padding: 20px;
+    margin-top: 10px;
+}
+.heading{
+    text-align: start; 
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.details{
+    background-color: #ffffff;
+    color: black;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+}
+.person{
+    margin-top: 10px;
+    padding: 5px;
+}
+.imagebox{
+    width: 120px;
+}
+.imagebox .image{
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     padding: 20px;
+     margin-left: 20px;
+}
+.userdetails{
+    padding: 5px;
+       color: gray;
+    text-align: start;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.middle{
+     text-align: start;
+    font-size: 22px;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.credentials{
+    margin-top: 15px;
+    width: 100%;
+    height: 120px;
+    margin: auto;
+}
+.username{
+    margin-top: 5px;
+}
+.image1{
+    margin-top: 5px;
+}
+.password{
+    margin-top: 5px;
+}
+.cnfpwd{
+    margin-top: 5px;
+}
+.update{
+    width: 30%;
+    height: 50px;
+    margin: auto;
+    background-color: #f46a6a;
+    margin-top: 15px;
+    padding: 10px;
+}
+.update button {
+    width: 100%;
+    height: 100%;
+     background-color: #f46a6a;
+     color: white;
+}
+.update button:hover{
+    background-color:#f46a6ac4 ;
+}
+.last{
+    margin-top: 26%;
+    padding: 20px;
+    
+}
+.last .text{
+    text-align: start;
+}
+@media screen and (min-width: 0px) and (max-width:325px) {
+    .profile{
+    padding: 20px;
+    margin-top: 10px;
+}
+.heading{
+    text-align: start;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.details{
+    background-color: #ffffff;
+    color: black;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+}
+.person{
+    margin-top: 10px;
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+}
+.imagebox{
+    width: 30%;
+    height: 100%;
+}
+ .imagebox .image{
+     width: 100%;
+     height: 80%;
+     margin-top:10px;
+     margin-left: -2px;
+     border-radius: 50%;
+}
+.userdetails{
+    width: 70%;
+    height: 100%;
+    padding: 5px;
+    text-wrap: wrap;
+    color: gray;
+    text-align: start;
+    margin-top: 25px;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.middle{
+     text-align: start;
+    font-size: 22px;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.image1{ 
+    max-width: fit-content;;
+}
+.credentials{
+    margin-top: 15px;
+    width: 100%;
+    height: 120px;
+    margin: auto;
+}
+.username{
+    margin-top: 5px;
+}
+.image1{
+    margin-top: 5px;
+}
+.password{
+    margin-top: 5px;
+}
+.cnfpwd{
+    margin-top: 5px;
+}
+.update{
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    background-color: #f46a6a;
+    margin-top: 15px;
+    padding: 10px;
+}
+.update button {
+    width: 100%;
+    height: 100%;
+     background-color: #f46a6a;
+     color: white;
+}
+.update button:hover{
+    background-color:#f46a6ac4 ;
+}
+.last{
+    margin-top: 16rem;
+    padding: 20px;
+    
+}
+.last .text{
+    text-align: start;
+}
+}
