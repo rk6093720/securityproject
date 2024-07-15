@@ -7,7 +7,7 @@ import Login from "./pages/Login";
 import { setAuthStatus } from "./redux/Auth/action";
 import Signup from "./pages/Signup";
 import ForgetPassword from "./pages/ForgetPassword";
-
+import ResetPassword from "./pages/ResetPassword";
 function App() {
   const isAuth = useSelector((state) => state.Auth.isAuth);
   const dispatch = useDispatch()
@@ -19,6 +19,7 @@ function App() {
     }
   }, [dispatch]);
   console.log(isAuth);
+
   return (
     <div className="App">
          <Routes>
@@ -30,6 +31,7 @@ function App() {
         <Route path="/forgetpassword" element={<ForgetPassword/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Signup/>}/>
+        <Route path="/resetpassword/:token/" element={<ResetPassword/>}/>
         {/* Main Route */}
         {isAuth && <Route path="/*" element={<Main />} />}
       </Routes>

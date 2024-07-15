@@ -42,6 +42,10 @@ const Navbar = () => {
     localStorage.removeItem("auth");
     navigate("/login") 
   };
+  const storage = getusername();
+  function getusername(){
+    return   JSON.parse(localStorage.getItem("auth") || "admin");
+  }
  return (
    <div className={styles.nav}>
      <Flex className={styles.navbox}>
@@ -102,7 +106,7 @@ const Navbar = () => {
                    src="https://skote-v-light.react.themesbrand.com/static/media/avatar-1.3921191a8acf79d3e907.jpg"
                    alt=""
                  />
-                 <span>admin</span>
+                 <span>{storage.username}</span>
                  <FaChevronDown />
                </Button>
              </PopoverTrigger>

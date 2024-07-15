@@ -6,6 +6,8 @@ const InitialState = {
   token:appData("auth") || "",
   isAuth: false,
   msg: "",
+  status:false,
+  profileData:[],
 };
 const reducer = (state = InitialState, action) => {
   const { type, payload } = action;
@@ -15,7 +17,6 @@ const reducer = (state = InitialState, action) => {
         ...state,
       };
     case types.LOGIN_SUCCESS:
-      console.log(payload,"-reducer")
       let newLogin = saveData("auth", payload);
       return {
         ...state,
@@ -39,11 +40,27 @@ const reducer = (state = InitialState, action) => {
     case types.REGISTER_SUCCESS:
       return {
         ...state,
+        status:true,
+        msg:payload
       };
     case types.REGISTER_FAILURE:
       return {
         ...state,
+        isError:true
       };
+    case types.PROFILE_FAILURE:
+      return {
+        ...state,
+        isLoading:false,
+        isError:true
+      }
+    case types.PROFILE_SUCCESS:
+      return {
+        ...state,
+        isLoading:false,
+        isError:false,
+        profileData:saveData("profile",payload)
+      }
     default:
       return state;
   }

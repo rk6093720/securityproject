@@ -20,7 +20,7 @@
     width: 100%;
     height: 50px;
     color: rgba(255, 255, 255, 0.696);
-    font-size: 22px;
+    font-size: 18px;
     align-content: center;
     font-family: sans-serif;
 }
@@ -32,10 +32,24 @@
     width: 100%;
     height: 50px;
     color: rgba(255, 255, 255, 0.696);
-    font-size: 22px;
+    font-size: 18px;
     align-content: center;
     font-family: sans-serif; 
 }
 .profile:hover{
     color: white;
+}
+.item {
+    margin-bottom: 10px;
+}
+.accordion{
+    width: 100%;
+    margin-top: 15px;
+    border: #2a3042;
+    color: #97a1c2;
+}
+.text{
+    text-align: start;
+    margin-left: 15px;
+     color: #97a1c2;
 }

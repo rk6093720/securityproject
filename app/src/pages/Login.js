@@ -14,7 +14,7 @@ import {
   Checkbox,
   Button,
   ButtonGroup,
-  Text
+  Text,
 } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
 import { LoginUser } from "../redux/Auth/action";
@@ -24,29 +24,29 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
-  const [checkBox,setCheckBox]=useState(false);
+  const [checkBox, setCheckBox] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-    useEffect(() => {
-      // Check if "Remember Me" is checked and retrieve stored credentials
-      const storedEmail = localStorage.getItem("rememberedEmail");
-      const storedPassword = localStorage.getItem("rememberedPassword");
+  useEffect(() => {
+    // Check if "Remember Me" is checked and retrieve stored credentials
+    const storedEmail = localStorage.getItem("rememberedEmail");
+    const storedPassword = localStorage.getItem("rememberedPassword");
 
-      if (storedEmail && storedPassword) {
-        setEmail(storedEmail);
-        setPassword(storedPassword);
-        setCheckBox(true);
-      }
-    }, []);
+    if (storedEmail && storedPassword) {
+      setEmail(storedEmail);
+      setPassword(storedPassword);
+      setCheckBox(true);
+    }
+  }, []);
   const handleLogin = (e) => {
     e.preventDefault();
     const payload = {
       email,
       password,
     };
-    if(email === "" && password === ""){
-      alert("Please fill email and password")
+    if (email === "" && password === "") {
+      alert("Please fill email and password");
       return;
     }
     // Validation for email and password
@@ -61,25 +61,24 @@ const Login = () => {
 
     dispatch(LoginUser(payload))
       .then((r) => {
-        if(r.type === LOGIN_SUCCESS){
+        if (r.type === LOGIN_SUCCESS) {
           alert("Login Successfully");
-          navigate("/dashboard")
-        }
-        else if(r.type === LOGIN_FAILURE){
+          navigate("/dashboard");
+        } else if (r.type === LOGIN_FAILURE) {
           alert("Please fill Correct Credentials");
-          return
+          return;
         }
       })
       .catch((e) => {
         alert(e.message);
       });
-        if (checkBox) {
-          localStorage.setItem("rememberedEmail", email);
-          localStorage.setItem("rememberedPassword", password);
-        } else {
-          localStorage.removeItem("rememberedEmail");
-          localStorage.removeItem("rememberedPassword");
-        }
+    if (checkBox) {
+      localStorage.setItem("rememberedEmail", email);
+      localStorage.setItem("rememberedPassword", password);
+    } else {
+      localStorage.removeItem("rememberedEmail");
+      localStorage.removeItem("rememberedPassword");
+    }
   };
 
   const handleLoginwithFacebook = () => {
@@ -157,7 +156,7 @@ const Login = () => {
           </Button>
         </ButtonGroup>
       </Box>
-      <Link to="/forgetpassword"> 
+      <Link to="/forgetpassword">
         <Button className={styles.forgetpwd}>
           <MdLock className={styles.icon} />
           Forget Password

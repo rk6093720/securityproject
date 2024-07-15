@@ -1,12 +1,8 @@
-body {
-    outline: none;
-    background-color: #f8f8fb;
-}
-.Login{
-    width: 35%;
-    height: 550px;
+.ForgetPassword{
+      width: 35%;
+    height: 300px;
     margin: auto;
-    margin-top:5%;
+    margin-top:10%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .box{
@@ -38,61 +34,32 @@ body {
     margin: auto;
 }
 .input{
-    margin-top:8px;
+    margin-top:10%;
 }
-.Checkbox{
-    width: 80%;
-    margin: auto;
-    margin-top: 15px;
-    text-align: start;  
-}
-.loginbutton{
-    width: 80%;
+.resetbutton{
+     width: 80%;
     margin: auto;
     margin-top: 15px;
 }
-.loginbutton button{
+.resetbutton button{
      background-color: blue;
     color: white;
-    width: 100%;
+    width: 30%;
     margin-top: 15px;
+    margin-left: 40%;
 }
-.loginbutton button:hover{
+.resetbutton button:hover{
     background-color: green;
 }
-.signwith{
-    width: 80%;
-    margin: auto;
-    margin-top: 25px;
-}
-.signwith p{
-    font-weight: bold;
-}
-.facebook{
-    background-color: rgba(250, 250, 250, 0.963);  
-}
-.signwith .google .facebook{
-    margin-top: 15px;
-}
-.forgetpwd{
-    padding: 5px;
-    width: 50%;
-    margin: auto;
-    margin-top: 25px;
-}
-.forgetpwd .icon {
-    margin-top: 1%;
-    margin-left: 5%;
-}
 .account{
-    margin-top: 15px;
+    margin-top: 10%;
 }
 .account .text{
     margin-top: 5px;
 }
 
 @media screen and (min-width:0px) and (max-width:320px) {
-    .Login{
+    .ForgetPassword{
     width: 100%;
     height: 550px;
     margin: auto;
@@ -132,55 +99,26 @@ body {
 .input{
     margin-top: 5px;
 }
-.Checkbox{
-    width: 80%;
-    margin: auto;
-    margin-top: 15px;
-    text-align: start;  
-}
-.loginbutton{
+
+.resetbutton{
     width: 80%;
     margin: auto;
     margin-top: 15px;
 }
-.loginbutton button{
+.resetbutton button{
      background-color: blue;
     color: white;
-    width: 100%;
+    width: 30%;
 }
-.loginbutton button:hover{
+.resetbutton button:hover{
     background-color: green;
-}
-.signwith{
-    width: 80%;
-    margin: auto;
-    margin-top: 10px;
-}
-.signwith p{
-    font-weight: bold;
-}
-.facebook{
-    background-color: rgba(250, 250, 250, 0.963);  
-}
-.signwith .google .facebook{
-    margin-top: 5px;
-}
-.forgetpwd{
-    padding: 5px;
-    width: 80%;
-    margin: auto;
-    margin-top: 30px;
-}
-.forgetpwd .icon {
-    margin-top: 1%;
-    margin-left: 10%;
 }
 .account{
     margin-top: 25px;
 }
 }
 @media screen and (min-width:321px) and (max-width:375px) {
-    .Login{
+    .ForgetPassword{
     width: 100%;
     height: 550px;
     margin: auto;
@@ -220,49 +158,20 @@ body {
 .input{
     margin-top: 5px;
 }
-.Checkbox{
-    width: 80%;
-    margin: auto;
-    margin-top: 15px;
-    text-align: start;  
-}
-.loginbutton{
+.resetbutton{
     width: 80%;
     margin: auto;
     margin-top: 15px;
 }
-.loginbutton button{
+.resetbutton button{
      background-color: blue;
     color: white;
-    width: 100%;
+    width: 30%;
 }
-.loginbutton button:hover{
+.resetbutton button:hover{
     background-color: green;
 }
-.signwith{
-    width: 80%;
-    margin: auto;
-    margin-top: 25px;
-}
-.signwith p{
-    font-weight: bold;
-}
-.facebook{
-    background-color: rgba(250, 250, 250, 0.963);  
-}
-.signwith .google .facebook{
-    margin-top: 5px;
-}
-.forgetpwd{
-    padding: 5px;
-    width: 80%;
-    margin: auto;
-    margin-top: 18px;
-}
-.forgetpwd .icon {
-    margin-top: 1%;
-    margin-left: 20%;
-}
+
 .account{ 
     margin-top: 35px;
 }
@@ -272,7 +181,7 @@ body {
 } 
 
 @media screen and (min-width:375px) and (max-width:425px) {
-       .Login{
+       .ForgetPassword{
     width: 100%;
     height: 550px;
     margin: auto;
@@ -312,48 +221,18 @@ body {
 .input{
     margin-top: 5px;
 }
-.Checkbox{
-    width: 80%;
-    margin: auto;
-    margin-top: 15px;
-    text-align: start;  
-}
-.loginbutton{
+.resetbutton{
     width: 80%;
     margin: auto;
     margin-top: 15px;
 }
-.loginbutton button{
+.resetbutton button{
      background-color: blue;
     color: white;
-    width: 100%;
-}
-.loginbutton button:hover{
-    background-color: green;
-}
-.signwith{
-    width: 80%;
-    margin: auto;
-    margin-top: 25px;
-}
-.signwith p{
-    font-weight: bold;
-}
-.facebook{
-    background-color: rgba(250, 250, 250, 0.963);  
-}
-.signwith .google .facebook{
-    margin-top: 5px;
-}
-.forgetpwd{
-    padding: 5px;
     width: 30%;
-    margin: auto;
-    margin-top: 18px;
 }
-.forgetpwd .icon {
-    margin-top: 1%;
-    margin-left: 20%;
+.resetbutton button:hover{
+    background-color: green;
 }
 .account{
     margin-top: 35px;
@@ -363,7 +242,7 @@ body {
 }
 }
 @media screen and (min-width:425px) and (max-width:768px) {
-       .Login{
+       .ForgetPassword{
     width: 100%;
     height: 550px;
     margin: auto;
@@ -403,48 +282,18 @@ body {
 .input{
     margin-top: 5px;
 }
-.Checkbox{
-    width: 80%;
-    margin: auto;
-    margin-top: 15px;
-    text-align: start;  
-}
-.loginbutton{
+.resetbutton{
     width: 80%;
     margin: auto;
     margin-top: 15px;
 }
-.loginbutton button{
+.resetbutton button{
      background-color: blue;
     color: white;
-    width: 100%;
-}
-.loginbutton button:hover{
-    background-color: green;
-}
-.signwith{
-    width: 80%;
-    margin: auto;
-    margin-top: 25px;
-}
-.signwith p{
-    font-weight: bold;
-}
-.facebook{
-    background-color: rgba(250, 250, 250, 0.963);  
-}
-.signwith .google .facebook{
-    margin-top: 5px;
-}
-.forgetpwd{
-    padding: 5px;
     width: 30%;
-    margin: auto;
-    margin-top: 18px;
 }
-.forgetpwd .icon {
-    margin-top: 1%;
-    margin-left: 20%;
+.resetbutton button:hover{
+    background-color: green;
 }
 .account{
     margin-top: 35px;
@@ -454,7 +303,7 @@ body {
 }
 }
 @media screen and (max-width:768px) {
-       .Login{
+       .ForgetPassword{
     width: 100%;
     height: 550px;
     margin: auto;
@@ -494,48 +343,18 @@ body {
 .input{
     margin-top: 5px;
 }
-.Checkbox{
-    width: 80%;
-    margin: auto;
-    margin-top: 15px;
-    text-align: start;  
-}
-.loginbutton{
+.resetbutton{
     width: 80%;
     margin: auto;
     margin-top: 15px;
 }
-.loginbutton button{
+.resetbutton button{
      background-color: blue;
     color: white;
-    width: 100%;
-}
-.loginbutton button:hover{
-    background-color: green;
-}
-.signwith{
-    width: 80%;
-    margin: auto;
-    margin-top: 25px;
-}
-.signwith p{
-    font-weight: bold;
-}
-.facebook{
-    background-color: rgba(250, 250, 250, 0.963);  
-}
-.signwith .google .facebook{
-    margin-top: 5px;
-}
-.forgetpwd{
-    padding: 5px;
     width: 30%;
-    margin: auto;
-    margin-top: 18px;
 }
-.forgetpwd .icon {
-    margin-top: 0;
-    margin-left: 5%;
+.resetbutton button:hover{
+    background-color: green;
 }
 .account{
     margin-top: 25px;

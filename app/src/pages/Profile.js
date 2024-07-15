@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "../pages/Profile.module.css"
 import { Box, Button, Flex, Image, Input, Text } from '@chakra-ui/react'
 import { FormLabel } from '@chakra-ui/react';
 import { MdSystemUpdateAlt } from "react-icons/md";
 const Profile = () => {
+   const storage = getData();
+    const [username,setUsername]= useState(storage.username);
+    const [image,setImage]= useState("");
+    const handleProfile = () => {
+
+    }
+    function getData(){
+      return JSON.parse(localStorage.getItem("auth"))
+    }
+console.log(storage);
   return (
     <div className={styles.profile}>
       <Box className={styles.heading}>
@@ -19,9 +29,8 @@ const Profile = () => {
             />
           </Box>
           <Box className={styles.userdetails}>
-            <h5>Admin</h5>
-            <p>Email:admin@gmail.com</p>
-            <p>Id no:- 1</p>
+            <h5>{storage.username}</h5>
+            <p>Email:{storage.email}</p>
           </Box>
         </Flex>
       </Box>
@@ -29,22 +38,14 @@ const Profile = () => {
         <h1>UPDATE ADMIN DETAILS</h1>
       </Box>
       <Box className={styles.credentials}>
-        <form>
+        <form onSubmit={handleProfile}>
           <Box className={styles.username}>
             <FormLabel>UserName</FormLabel>
-            <Input placeholder="username" />
+            <Input type='text' placeholder="username" value={username} onChange={(e)=> setUsername(e.target.value)} />
           </Box>
           <Box className={styles.image1}>
             <FormLabel>Image</FormLabel>
-            <Input type="file" placeholder="image" />
-          </Box>
-          <Box className={styles.password}>
-            <FormLabel>password</FormLabel>
-            <Input placeholder="Password" />
-          </Box>
-          <Box className={styles.cnfpwd}>
-            <FormLabel>Confirm Password</FormLabel>
-            <Input placeholder="Confirm Password" />
+            <Input type="file" placeholder="image" name='Image' accept='image/*'  onChange={(e) => setImage(e.target.files[0])}/>
           </Box>
           <Box className={styles.update}>
             <Button type="submit">

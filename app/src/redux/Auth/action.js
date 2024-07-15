@@ -3,16 +3,26 @@ import axios from "axios";
 const LoginUser = (payload) => async (dispatch) => {
   dispatch({ type: types.LOGIN_REQUEST });
   return await axios
-    .post("https://reqres.in/api/login",payload )
+    .post("http://127.0.0.1:8000/app/login/", payload)
     .then((r) => {
       console.log(r.data);
-     return dispatch({ type: types.LOGIN_SUCCESS, payload: r.data });
+      return dispatch({ type: types.LOGIN_SUCCESS, payload: r.data });
     })
     .catch((e) => {
       return dispatch({ type: types.LOGIN_FAILURE, payload: e });
     });
 };
-// const register = () => (dispatch) => {};
+const RegisterUser = (payload) => async(dispatch) => {
+  dispatch({type:types.REGISTER_REQUEST})
+  return await axios
+    .post("http://127.0.0.1:8000/app/register/", payload)
+    .then((res) => {
+      return dispatch({ type: types.REGISTER_SUCCESS, payload: res.data });
+    })
+    .catch((e) => {
+      return dispatch({ type: types.REGISTER_FAILURE, payload: e });
+    });
+};
 // const socialLogin = () => (dispatch) => {};
 
 export const setAuthStatus = (status) => ({
@@ -21,6 +31,7 @@ export const setAuthStatus = (status) => ({
 });
 
 export {
-     LoginUser
-    //   register, socialLogin 
+     LoginUser,
+     RegisterUser
+    //socialLogin 
 };
